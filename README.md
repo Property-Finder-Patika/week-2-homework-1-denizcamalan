@@ -14,8 +14,19 @@
 ## Chapter 4
 
 - Arrays
+    - They are homogeneous and fixed size. 
+    - Any changes that the function makes to array elements affect only the copy, not original.
+    - Other than special cases like SHA256's fixed-size hash, arrays are seldom used as function parameters or results;instead, we use slices.
 - Slices
-- Maps 
+    - Lightweight data structure that gives access to subsequence of the elements of an array, which is known as the slices's underlying array. It has 3 component; a pointer, a length, a capacity.
+    - Slices are not comparable, so cannot use == to test. (can use bytes.Equal function)
+    - Slice elements are indirect;
+        - 1-Making it possible for a slice to contain itself. 
+        - 2-Fixed slice value may contain diff. element at diff. times.
+    - make() create an unnamed array variable and returns a slice of it.
+    - copy() : copies elements from one slice to another of the same type.
+- Maps
+
 - Structs
 - JSON
 - Text and HTML Templates
@@ -39,8 +50,8 @@
 
 ## Exercises
 
-- An exercise for arithmetic operations
-- An exercise for conversions among basic types
-- An exercise for conversions among string and basic types using strconv package
-- An exercise for iota
-- An exercise for scope
+- An exercise for arithmetic operations [Exercise1](./exercises/aritmetic)
+- An exercise for conversions among basic types [Exercise2](./exercises/conv_basic_types)
+- An exercise for conversions among string and basic types using strconv package [Exercise3](./exercises/string_types)
+- An exercise for iota [Exercise4](./exercises/itoa)
+- An exercise for scope [Exercise5](./exercises/scope)
