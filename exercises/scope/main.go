@@ -33,6 +33,8 @@ func scope() int{				// I declared again smt  for all of the layer.
 // smt in 2nd layer is 10
 // End of the result of scope()/smt is 30
 
+//--------------------------------------------------------------------------------------------------------------------//
+
 func scope2() int{				// I declared smt at once then change its values.
 	smt := 30
 	fmt.Println("smt in 1st layer",smt)
